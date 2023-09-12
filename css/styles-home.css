@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(246, 247, 249);
+  font-family: "Merriweather", serif;
+  /* color: rgb(202, 243, 224); */
+  color: #616161;
+  /* color: white; */
+  margin: 0;
+}
+h1 {
+  /* color: white; */
+  color: #fbf8be;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+/* .bg-img img{
+  height: 100vh;
+} */
+.container {
+  position: relative;
+}
+.dev-ui {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  margin-bottom: 30px;
+}
+.home-link {
+  position: absolute;
+  right: 150px;
+  top: 0px;
+  bottom: 0px;
+}
+.docs-link {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  bottom: 0px;
+}
+.btn-right {
+  color: #fbf8be;
+}
+.btn-right-docs {
+  color: #fbf8be;
+  text-decoration: none;
+}
+.upper-container {
+  position: absolute;
+  top: 5rem;
+  left: 70px;
+  margin-top: 40px;
+}
+.link-rel {
+  border-radius: 16px;
+  background-color: #533549;
+  border: 30px;
+  margin: 40px 0px 30px 0px;
+  padding: 30px;
+  /* color: #F9ED4E; */
+  color: #f6b042;
+}
+.intro {
+  width: 60%;
+  margin-top: 0px;
+  margin-bottom: 4.5rem;
+}
+.middle-container {
+  position: absolute;
+  top: 28rem;
+  left: 70px;
+}
+.go-to {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.bottom-container {
+  color: #b88746;
+  background-color: #191919;
+  text-align: center;
+  padding: 30px;
+  padding-right: 0px;
+  border: 0px;
+  outline: 0;
+  font-size: 20px;
+}
+.reach-me {
+  padding: 20px 0px 30px 0px;
+}
+.footer-link {
+  margin: auto 30px auto 30px;
+  text-decoration: none;
+  color: #fdf5a6;
+  /* font-size: 20px; */
+}
+.footer-link:hover {
+  color: #b88746;
+}
+.copyright {
+  font-size: 0.5rem;
+  padding: 20px 0px 0px 0px;
+}
+.btn-link {
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  font-family: Arial;
+  color: #f7f7f7;
+  font-size: 20px;
+  background: black;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 30px;
+  border: solid #f7f7f7 3px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  background: #96cf24;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+.btn-link-1 {
+  text-decoration: none;
+  color: #f7f7f7;
+}

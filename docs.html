@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dev-UI-DOCS</title>
+    <link rel="stylesheet" href="css/styles-docs.css" />
+    <link rel="stylesheet" href="css/styles-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-for-docs">
+      <div class="bg-img-docs">
+        <img
+          src="images/12796.jpg"
+          alt="backgroung"
+          style="width: 100%"
+        />
+      </div>
+      <div class="top-intro">
+        <h1 class="dev-ui">DEV UI</h1>
+        <h2 class="home-link"><a class="btn-right-docs" href="index.html">HOME</a></h2>
+        <h2 class="docs-link">
+          <a class="btn-right" href="docs.html">DOCS</a>
+        </h2>
+      </div>
+    </div>
+    <section class="component-pos">
+    <!-- <section> -->
+      <div class="component-list">
+        <h2 class="comp-heading">Components</h2>
+        <ul>
+          <h3 class="alert-comp"><a class="comp-list-link" href="#alert">Alert</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#avtar">Avtar</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#badge">Badge</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#button">Button</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#card">Card</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#image">Image</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#list">List</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#modal">Modal</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#rating">Rating</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#toast">Toast</a></h3>
+          <h3 class="comp--"><a class="comp-list-link" href="#grid">Grid</a></h3>
+          <!-- <h3 class="alert-comp"><a class="comp-list-link" href="#alert">Alert</a></h3>
+          <h3 class="avtar-comp"><a class="comp-list-link" href="#avtar">Avtar</a></h3>
+          <h3 class="badge-comp"><a class="comp-list-link" href="#badge">Badge</a></h3>
+          <h3 class="button-comp"><a class="comp-list-link" href="#button">Button</a></h3>
+          <h3 class="card-comp"><a class="comp-list-link" href="#card">Card</a></h3>
+          <h3 class="image-comp"><a class="comp-list-link" href="#image">Image</a></h3>
+          <h3 class="list-comp"><a class="comp-list-link" href="#list">List</a></h3>
+          <h3 class="modal-comp"><a class="comp-list-link" href="#modal">Modal</a></h3>
+          <h3 class="rating-comp"><a class="comp-list-link" href="#rating">Rating</a></h3>
+          <h3 class="toast-comp"><a class="comp-list-link" href="#toast">Toast</a></h3>
+          <h3 class="grid-comp"><a class="comp-list-link" href="#grid">Grid</a></h3> -->
+        </ul>
+      </div>
+    <!-- </section> -->
+    <!-- <section> -->
+      <div class="component">
+        <div>
+          <h2>Instruction</h2>
+          <a
+            >To use these components in your project, copy the code snippets to
+            the html of your page.
+          </a>
+        </div>
+        <h2 id="alert">Alert</h2>
+        <div class="alert-container">
+            <div class="alert-data">
+            <div class="primary-alert"><a class="primary-a">A Primary alert.</a></div>
+            <div class="secondary-alert"><a class="secondary-a">A Secondary alert.</a></div>
+            <div class="success-alert"><ac class="success-a">A Success alert.</a></div>
+            <div class="warning alert"><a class="warning-a">A Warning alert.</a></div>
+            <div class="danger-alert"><a class="danger-a">A Danger alert.</a></div>
+          </div>
+            <div class="alert-code">
+                <p><pre>
+                  &lt;div class="alert alert-primary"&gt;
+                    A Primary alert.
+                    &lt;button class="close-btn-alert"&gt;
+                      &lt;span class="material-icons-outlined"&gt;close&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="alert alert-secondary"&gt;
+                    A Secondary alert.
+                    &lt;button class="close-btn-alert"&gt;
+                      &lt;span class="material-icons-outlined"&gt;close&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="alert alert-success"&gt;
+                    &lt;span class="material-icons-outlined"&gt;check&lt;/span&gt;
+                    A Success alert.
+                    &lt;button class="close-btn-alert"&gt;
+                      &lt;i&gt;&lt;span class="material-icons-outlined"&gt;close&lt;/span&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="alert alert-warning"&gt;
+                    &lt;span class="material-icons-outlined"&gt;error_outline&lt;/span&gt;
+                    A Warning alert!
+                    &lt;button class="close-btn-alert"&gt;
+                      &lt;i&gt;&lt;span class="material-icons-outlined"&gt;close&lt;/span&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="alert alert-danger"&gt;
+                    &lt;span class="material-icons-outlined"&gt;warning&lt;/span&gt;
+                    A Danger alert!!
+                    &lt;button class="close-btn-alert"&gt;
+                      &lt;i&gt;&lt;span class="material-icons-outlined"&gt;close&lt;/span&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  </pre>
+                  </p>
+        </div>
+      </div>
+      <h2 id="avtar">Avtar</h2>
+      <div class="avtar-container">
+        <div class="avtar-data">
+          <img class="avatar-biggest" src="images-docs/a-1.jpg" alt="a-1">
+          <img class="avatar-big" src="images-docs/a-2.jpg" alt="a-2">
+          <img class="avatar-small" src="images-docs/a-3.jpg" alt="a-3">
+          <img class="avatar-smallest" src="images-docs/a-4.jpg" alt="a-4">
+        </div>
+        <div class="avtar-code">
+          <p><pre>
+            &lt;img class="avatar-biggest" src="https://picsum.photos/1000" /&gt;
+  
+            &lt;img class="avatar-big" src="https://picsum.photos/100" /&gt;
+              
+            &lt;img class="avatar-small" src="https://picsum.photos/10" /&gt;
+              
+            &lt;img class="avatar-smallest" src="https://picsum.photos/1" /&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="badge">Badge</h2>
+      <div class="badge-container">   
+        <div class="badge-pos">
+        <div class="badge-data">
+          <img class="badge-img" src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="img">
+          <img class="home-img" src="images-docs/home.png" alt="home">
+          <img class="wishlist-img" src="images-docs/wishlist.png" alt="wishlist">
+        </div>
+        <div class="badge-code">
+          <p><pre>
+            &lt;div class="avatar-with-badge"&gt;
+              &lt;img src="https://picsum.photos/50" /&gt;
+              &lt;div class="badge badge-avatar"&gt;&lt;/div&gt;
+           &lt;/div&gt;
+                         
+           &lt;div class="icon-with-badge"&gt;
+              &lt;i&gt;&lt;span class="material-icons-outlined"&gt;shopping_cart&lt;/span&gt;&lt;/i&gt;
+              &lt;div class="badge badge-icon"&gt;3&lt;/div&gt;
+           &lt;/div&gt;
+                         
+           &lt;div class="icon-with-badge"&gt;
+              &lt;i
+                &gt;&lt;span
+                  class="material-icons-outlined"
+                  style="color: rgb(226, 17, 17)"
+                  &gt;favorite&lt;/span
+                &gt;&lt;/i
+              &gt;
+              &lt;div class="badge badge-icon"&gt;3&lt;/div&gt;
+           &lt;/div&gt;
+          </pre></p>
+        </div>
+        </div>
+      </div>
+      <h2 id="button">Button</h2>
+      <div class="button-container">
+        <div class="btn-data">
+          <button class="btn-primary"><span>Primary</span></button>
+          <button class="btn-secondary"><span>Secondary</span></button>
+          <button class="btn-link-111"><span>Link</span></button>
+        </div>
+        <div class="btn-code">
+          <p><pre>
+            &lt;div&gt;
+              &lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;button class="btn-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;button class="btn-link-111"&gt;
+                &lt;a href=""&gt;Link&lt;/a&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="card">Card</h2>
+      <div class="card-container">
+        <div class="card-data">
+          <div class="card-data-pos">
+          <div card-intro>
+            <h2>Title</h2>
+            <p style="width: 220px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="btn-card">
+            <button class="btn-primary"><span>Primary</span></button>
+            <button class="btn-link-111"><span>Link</span></button>
+          </div>
+        </div>
+        </div>
+        <div class="card-code">
+          <p><pre>
+            &lt;div class="card-container"&gt;
+              &lt;div class="card-with-textOnly"&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Title&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="btns"&gt;
+                  &lt;div&gt;
+                    &lt;button class="btn-primary"&gt;
+                      &lt;strong&gt;Primary&lt;/strong&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;button class="btn-link-111"&gt;
+                      &lt;a href="https://google.com"&gt;&lt;strong&gt;Link&lt;/strong&gt;&lt;/a&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2>Horizontal Cards</h2>
+      <div class="horizontal-card-container">
+        <div class="hori-card-data">
+          <div hori-card-intro>
+            <img class="card-img" src="images-docs/card-img.jpg" alt="card-img">
+          </div>
+            <div class="hori-card-data-pos">
+              <div>
+                <h2>Title</h2>
+                <p style="width: 220px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="btn-card">
+                <button class="btn-primary"><span>Primary</span></button>
+                <button class="btn-link-111"><span>Link</span></button>
+              </div>
+            </div>
+          </div>
+        <div class="hori-card-code">
+          <p><pre>
+            &lt;div class="card-horizontal"&gt;
+              &lt;div&gt;&lt;img src="https://picsum.photos/250" /&gt;&lt;/div&gt;
+              &lt;div&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Title&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="btns"&gt;
+                  &lt;div&gt;
+                    &lt;button class="btn-primary"&gt;
+                      &lt;strong&gt;Primary&lt;/strong&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;button class="btn-link-111"&gt;
+                      &lt;a href="https://google.com"
+                      &gt;&lt;strong&gt;Link&lt;/strong&gt;&lt;/a
+                                        &gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="image">Image</h2>
+      <div class="image-container">
+        <div class="img-data">
+          <img class="img-1" src="images-docs/img-1.jpg" alt="img-1">
+          <img class="img-2" src="images-docs/723-540x540.jpg" alt="img-2">
+        </div>
+        <div class="img-code">
+          <p><pre>
+            &lt;div class="img-div img-rectangle" style="height: auto; width: 100%"&gt;
+              &lt;img src="https://picsum.photos/500/250" /&gt;
+            &lt;/div&gt;
+              
+            &lt;div class="img-div img-circle" style="height: auto; width: 50%"&gt;
+              &lt;img src="https://picsum.photos/250" /&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="List">List</h2>
+      <div class="list-container">
+        <div class="list-data">
+          <div class="normal-list-data">
+            <ul>
+              <h3>Normal List</h3>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="stacked-list-data">
+            <ul>
+              <h3 class="stacked-heading">Stacked list</h3>
+              <li class="stacked-item">Item 1</li>
+              <li class="stacked-item">Item 2</li>
+              <li class="stacked-item">Item 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="list-code">
+          <p><pre>
+            &lt;ul class="list-normal"/&gt;
+              &lt;h2/&gt;Normal List&lt;/h2/&gt;
+              &lt;li/&gt;Item 1&lt;/li/&gt;
+              &lt;li/&gt;Item 2&lt;/li/&gt;
+              &lt;li/&gt;Item 3&lt;/li/&gt;
+            &lt;/ul/&gt;
+            
+            &lt;ul class="list-stacked"/&gt;
+              &lt;h2/&gt;Stacked List&lt;/h2/&gt;
+              &lt;li/&gt;Item 1&lt;/li/&gt;
+              &lt;li/&gt;Item 2&lt;/li/&gt;
+              &lt;li/&gt;Item 3&lt;/li/&gt;
+            &lt;/ul/&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="modal">Modal</h2>
+      <div class="modal-container">
+        <div class="modal-data">
+          <div class="modal-q"><h2>Would You like to add this item to your Cart?</h2></div>
+          <div class="modal-button">
+              <button class="btn-No"><span>No</span></button>
+              <button class="btn-Yes"><span>Yes</span></button>
+          </div>
+        </div>
+        <div class="modal-code">
+          <p><pre>
+            &lt;div class="modal"&gt;
+              &lt;h3&gt;Would You like to add this item to your Cart?&lt;/h3&gt;
+              &lt;button class="btn-primary"&gt;Cancel&lt;/button&gt;
+              &lt;button class="btn-link-111"&gt;
+                &lt;a href=""&gt;Add&lt;/a&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="rating">Rating</h2>
+      <div class="rating-container">
+        <div class="rating-data">
+          <h1>⭐⭐⭐⭐✰</h1>
+        </div>
+        <div class="rating-code">
+          <p><pre>
+            &lt;div class="rating"&gt;
+              &lt;input class="stars" type="radio" name="star" />&lt;label for="star1"
+                &gt;&lt;svg
+                  id="star1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30px"
+                  viewBox="0 -5 576 522"
+                &gt;&lt;/svg&gt;
+                  &lt;path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+                  /&gt;&lt;/svg
+              &gt;&lt;/label&gt;
+              &lt;input class="stars" type="radio" name="star" /&gt;&lt;label for="star2"
+                &gt;&lt;svg
+                  id="star2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30px"
+                  viewBox="0 -5 576 522"
+                &gt;&lt;/svg&gt;
+                  &lt;path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+                  /&gt;&lt;/svg
+              &gt;&lt;/label&gt;
+              &lt;input class="stars" type="radio" name="star" /&gt;&lt;label for="star3"
+                &gt;&lt;svg
+                  id="star3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30px"
+                  viewBox="0 -5 576 522"
+                &gt;&lt;/svg&gt;
+                  &lt;path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.6&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="toast">Toast</h2>
+      <div class="toast-container">
+        <div class="toast-data">
+          <a class="retry-in">Retry in 5 seconds.</a>
+        </div>
+        <div class="toast-code">
+          <p><pre>
+            &lt;div class="alert alert-primary"&gt;
+              Retry in 5 seconds
+              &lt;button class="close-btn-alert"&gt;
+                  &lt;span class="material-icons-outlined"&gt;
+                      close
+                  &lt;/span&gt;
+              &lt;/button&gt; 
+          &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      <h2 id="grid">Grid</h2>
+      <div class="grid-container">
+        <div class="grid-data">
+          <h2 class="grid-type">2 grid items</h2>
+          <div class="grid-2-items">
+            <div class="item-1">Item-1</div>
+            <div class="item-2">Item-2</div>
+          </div>
+          <h2 class="grid-type">3 grid items</h2>
+          <div class="grid-3-items">
+            <div class="item-11">Item-1</div>
+            <div class="item-22">Item-2</div>
+            <div class="item-33">Item-3</div>
+          </div>
+        </div>
+        <div class="grid-code">
+          <p><pre>
+            &lt;div class="grid-2-items"&gt;
+              &lt;div&gt;Item 1&lt;/div&gt;
+              &lt;div&gt;Item 2&lt;/div&gt;
+            &lt;/div&gt;
+              
+            &lt;div class="grid-3-items"&gt;
+              &lt;div&gt;Item 1&lt;/div&gt;
+              &lt;div&gt;Item 2&lt;/div&gt;
+              &lt;div&gt;Item 3&lt;/div&gt;
+            &lt;/div&gt;
+          </pre></p>
+        </div>
+      </div>
+      </div>
+  </section>
+  <div class="bottom-container-docs">
+    <h2 class="reach-me">Reach me at</h2>
+    <a
+      class="footer-link"
+      href="https://www.linkedin.com/in/sahil-pandey-309465201/"
+      >LinkedIn</a
+    >
+    <a class="footer-link" href="https://github.com/sahilpandey217">Github</a>
+    <a class="footer-link" href="https://sahilpandeycv.netlify.app/">Website</a>
+    <p class="copyright">© Sahil Pandey.</p>
+  </div>
+  </body>
+</html>
